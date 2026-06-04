@@ -1,0 +1,43 @@
+name: opcua_industrial_app
+description: Industrial LED control panel for Altus PLC Kit via OPC UA backend.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # HTTP client
+  dio: ^5.9.2
+
+  # WebSocket
+  web_socket_channel: ^2.4.0
+
+  # State management
+  flutter_bloc: ^9.1.1
+  equatable: ^2.0.8
+
+  # Persistence
+  shared_preferences: ^2.5.5
+
+  # Typography
+  google_fonts: ^8.1.0
+
+  # SVG support
+  flutter_svg: ^2.3.0
+
+  # Animations
+  flutter_animate: ^4.5.2
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
