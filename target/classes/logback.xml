@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- PLC4X internal logs: INFO by default, set to DEBUG for troubleshooting OPC UA negotiation -->
+    <logger name="org.apache.plc4x" level="INFO"/>
+
+    <!-- Eclipse Milo (simulator) -->
+    <logger name="org.eclipse.milo" level="INFO"/>
+
+    <!-- Ktor engine -->
+    <logger name="io.ktor" level="INFO"/>
+
+    <!-- Application code -->
+    <logger name="com.altuslink" level="DEBUG"/>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+</configuration>
